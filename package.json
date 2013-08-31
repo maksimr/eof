@@ -32,6 +32,7 @@
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-watch": "~0.4.0",
     "matchdep": "*",
+    "grunt-cli": "~0.1.9",
     "grunt": "~0.4.1"
   },
   "keywords": [],
