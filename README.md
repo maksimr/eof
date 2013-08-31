@@ -1,4 +1,6 @@
-# eof [![Build Status](https://secure.travis-ci.org/maksimrv/eof.png?branch=master)](http://travis-ci.org/maksimrv/eof)
+# eof
+
+[![Build Status](https://travis-ci.org/maksimr/eof.png?branch=master)](https://travis-ci.org/maksimr/eof) [![Build Status](https://drone.io/github.com/maksimr/eof/status.png)](https://drone.io/github.com/maksimr/eof/latest)
 
 Create template from function body.
 
