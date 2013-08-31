@@ -2,7 +2,13 @@
 
 [![Build Status](https://travis-ci.org/maksimr/eof.png?branch=master)](https://travis-ci.org/maksimr/eof) [![Build Status](https://drone.io/github.com/maksimr/eof/status.png)](https://drone.io/github.com/maksimr/eof/latest)
 
-Create template from function body.
+Extract template from multi-line comment inside function body.
+
+I use it in tests when you don't want to make templates outside of the test.
+So it looks more readable than an array of strings or multi-line strings (I believe in it)
+and simple then outside file.
+
+Enjoy testing!
 
 ## Getting Started
 
