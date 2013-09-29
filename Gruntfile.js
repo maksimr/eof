@@ -22,6 +22,22 @@ module.exports = function(grunt) {
                 src: ['test/**/*.js']
             },
         },
+        'npm-contributors': {
+            options: {
+                commitMessage: 'chore: update contributors'
+            }
+        },
+        bump: {
+            options: {
+                commitMessage: 'chore: release v%VERSION%',
+                pushTo: 'origin'
+            }
+        },
+        'auto-release': {
+            options: {
+                checkTravisBuild: true
+            }
+        },
         watch: {
             gruntfile: {
                 files: '<%= jshint.gruntfile.src %>',
@@ -38,6 +54,15 @@ module.exports = function(grunt) {
         },
     });
 
+    grunt.registerTask('release', 'Bump the version and publish to NPM.', function(type) {
+        type = type || 'patch';
+
+        grunt.task.run([
+            'npm-contributors',
+            'bump:' + type,
+            'npm-publish'
+        ]);
+    });
     grunt.registerTask('test', ['nodeunit']);
     grunt.registerTask('default', ['jshint', 'nodeunit']);
 };
