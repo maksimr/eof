@@ -23,5 +23,15 @@ exports['eof'] = {
          */
         }).format('javascript'), beautify.js_beautify('var max = function () {return Math.max.apply(null, arguments);};'), 'should extract javascript template');
         test.done();
+    },
+    'extract pretty text template': function(test) {
+        test.expect(1);
+        test.equal(eof.extract(function() {
+            /*
+               Lorem ipsum dolor sit amet,
+               consectetur adipisicing elit
+             */
+        }).format('text'), 'Lorem ipsum dolor sit amet,\nconsectetur adipisicing elit', 'should extract pretty text template');
+        test.done();
     }
 };
