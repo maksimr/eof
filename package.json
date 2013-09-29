@@ -1,47 +1,50 @@
 {
-    "name": "eof",
-    "description": "The best project ever.",
-    "version": "0.0.1",
-    "homepage": "https://github.com/maksimrv/eof",
-    "author": {
-        "name": "Maksim Ryzhikov",
-        "email": "rv.maksim@yandex.ru"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/maksimrv/eof.git"
-    },
-    "bugs": {
-        "url": "https://github.com/maksimrv/eof/issues"
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "https://github.com/maksimrv/eof/blob/master/LICENSE-MIT"
-    }],
-    "main": "lib/eof",
-    "engines": {
-        "node": ">= 0.8.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "devDependencies": {
-        "grunt-contrib-jshint": "~0.6.0",
-        "grunt-contrib-nodeunit": "~0.2.0",
-        "grunt-contrib-watch": "~0.4.0",
-        "grunt-npm": "~0.0.2",
-        "grunt-bump": "~0.0.7",
-        "grunt-auto-release": "~0.0.2",
-        "matchdep": "*",
-        "grunt-cli": "~0.1.9",
-        "grunt": "~0.4.1"
-    },
-    "keywords": [
-        "test",
-        "mock"
-    ],
-    "dependencies": {
-        "verbal-expressions": "~0.1.0",
-        "js-beautify": "~1.4.0"
+  "name": "eof",
+  "description": "The best project ever.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/maksimrv/eof",
+  "author": {
+    "name": "Maksim Ryzhikov",
+    "email": "rv.maksim@yandex.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maksimrv/eof.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maksimrv/eof/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/maksimrv/eof/blob/master/LICENSE-MIT"
     }
+  ],
+  "main": "lib/eof",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-npm": "~0.0.2",
+    "grunt-bump": "~0.0.7",
+    "grunt-auto-release": "~0.0.2",
+    "matchdep": "*",
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "test",
+    "mock"
+  ],
+  "dependencies": {
+    "verbal-expressions": "~0.1.0",
+    "js-beautify": "~1.4.0"
+  },
+  "contributors": []
 }
